@@ -1,2 +1,6 @@
 data/*
 params.env
+app/publicidade/media/*
+
+# Inclui logo
+!app/publicidade/media/_.png
