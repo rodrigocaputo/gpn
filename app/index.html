@@ -1,81 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8" />
-	<script type="text/javascript" charset="utf8" src="jquery-1.11.2.min.js"></script>
-	<script type="text/javascript" charset="utf8" src="noticias/script.js"></script>
+	<meta charset="UTF-8" /><html>
+<head>
+	<title>&nbsp</title>
 	<style type="text/css">
-		* {
-			margin: 0px;
-			padding: 0px;
-			overflow: hidden;
-		}
-		body {
-			background: #113535;
-			width: 909px;
-			height: 232px;
-		}
-		#tudo {
-			position: relative;
-			padding: 6px;
-		}
-		#cabecalho {
-			font-size: 32px;
-			color: #FFFFFF;
-			border:solid 1px;
-			font-family: arial;
-			padding: 2px 5px;
-			height: 38px;
-		}
-		#editoria {
-			font-weight: bold;
-			display: inline-block;
-			opacity: 0;
-		}
-		#fonte {
-			display: inline-block;
-			text-align: right;
-			float: right;
-			opacity: 0;
-		}
-		#titulo {
-			font-size: 48px;
-			color: #000000;
-			padding: 2px;
-			font-family: sans-serif;
-			position: relative;
-			background: white;
-			height: 175px;
-			width: 887px;
-			padding: 5px;
-			padding-bottom: 2px;
-			padding-top: 0px;
-
-			display: table-cell;
-			vertical-align: middle;
-			position: relative;
-			font-weight: 500;
-			font-style: italic;
-		}
-		#texto {
-			opacity: 0;
-		}
+	* {
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+	}
+	iframe {
+		border: none;
+	}
+	#publicidade {
+		position: absolute;
+		width: 910px;
+		height: 512px;
+	}
+	#senha {
+		position: absolute;
+		left: 910px;
+		width: 456px;
+		height: 768px;
+	}
+	#noticias {
+		position: absolute;
+		top: 512px;
+		width: 910px;
+		height: 232px;
+	}
+	#ladrilhos {
+		position: absolute;
+		top: 744px;
+		height: 24px;
+		width: 100%;
+		background: url("ladrilhos.png");
+		background-size: 100px 24px;
+	}
 	</style>
-
 </head>
 <body>
-	<div id="tudo">
-		<div id="cabecalho">
-			<div id="editoria">
-			</div>
-			<div id="fonte">
-			</div>
-		</div>
-		<div id="titulo">
-			<div id="texto">
-				
-			</div>
-		</div>
-	</div>
+	<iframe id="publicidade" src="publicidade/index.html"></iframe>
+	<iframe id="senha" src="senha/index.html"></iframe>
+	<iframe id="noticias" src="noticias/index.html"></iframe>
+	<div id="ladrilhos"></div>
 </body>
 </html>
